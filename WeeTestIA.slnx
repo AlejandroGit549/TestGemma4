@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="WeeTestIA.API/WeeTestIA.API.csproj" />
+    <Project Path="WeeTestIA.Application/WeeTestIA.Application.csproj" />
+    <Project Path="WeeTestIA.Core/WeeTestIA.Core.csproj" />
+    <Project Path="WeeTestIA.Infrastructure/WeeTestIA.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+</Solution>
