@@ -10,4 +10,17 @@
     <ProjectReference Include="..\WeeTestIA.Domain\WeeTestIA.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Perfil\Commands\DeleteCatPefil\" />
+    <Folder Include="Features\Perfil\Commands\UpdateCatPerfil\" />
+    <Folder Include="Features\Perfil\Queries\GetListCatPerfiles\" />
+    <Folder Include="Models\Configurations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+  </ItemGroup>
+
 </Project>
