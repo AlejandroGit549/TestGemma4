@@ -2,7 +2,7 @@
   <Folder Name="/src/">
     <Project Path="WeeTestIA.API/WeeTestIA.API.csproj" />
     <Project Path="WeeTestIA.Application/WeeTestIA.Application.csproj" />
-    <Project Path="WeeTestIA.Core/WeeTestIA.Core.csproj" />
+    <Project Path="WeeTestIA.Domain/WeeTestIA.Domain.csproj" Id="4ac03b18-d2fb-4c24-9289-96cbc81f9933" />
     <Project Path="WeeTestIA.Infrastructure/WeeTestIA.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/test/" />
