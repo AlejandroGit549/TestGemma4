@@ -12,9 +12,4 @@ public class CreaCatPerfilCommand : IRequest<Response<int>>
         Nombre = nombre;
         Descripcion = descripcion;
     }
-    public CreaCatPerfilCommand()
-    {
-        Nombre = string.Empty;
-        Descripcion = string.Empty;
-    }
 }

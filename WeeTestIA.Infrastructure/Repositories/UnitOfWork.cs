@@ -25,9 +25,9 @@ public class UnitOfWork : IUnitOfWork
         {
             return await _context.SaveChangesAsync();
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            throw new Exception($"Error al guardar: {ex.Message}");
+            throw;
         }
     }
 
