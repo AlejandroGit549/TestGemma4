@@ -20,7 +20,7 @@ ${diff}
 `;
 
 async function consultaOllama(pmpt) {
-  console.log('=== Llamando HTTP a Ollama (127.0.0.1:11434) con timeout 15 minutos ===');
+  console.log('=== Llamando HTTP a Ollama (192.168.10.126:11434) con timeout 15 minutos ===');
 
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 900000); // 15 minutos
@@ -37,11 +37,11 @@ async function consultaOllama(pmpt) {
   });
 
   try {
-    const resp = await fetch('http://127.0.0.1:11434/api/generate', {
+    const resp = await fetch('http://192.168.10.126:11434/api/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: 'gemma4',
+        model: 'gemma4:31b',
         prompt: _pmpt,
         stream: false
       }),
@@ -69,8 +69,8 @@ async function ComentarPR(_commnet) {
 
   const owner = 'AlejandroGit549';
   const repo = 'TestGemma4';
-  const pullNumber = '1'; // El número del PR
-  const token = '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';
+  const pullNumber = '2'; // El número del PR
+  const token = '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';
 
   const url = `https://api.github.com/repos/${owner}/${repo}/issues/${pullNumber}/comments`;
   const postComment = async () => {
