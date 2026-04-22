@@ -29,6 +29,7 @@ public partial class AppTestIaContext : DbContext
 
             entity.ToTable("CatPerfil");
 
+            entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.Activo).HasDefaultValue(true);
             entity.Property(e => e.Descripcion)
                 .HasMaxLength(250)
